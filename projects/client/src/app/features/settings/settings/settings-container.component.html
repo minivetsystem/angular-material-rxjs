@@ -1,0 +1,23 @@
+<mat-card class="theme-settings">
+  <mat-card-header>
+    <mat-card-title>{{ 'amr.settings.title' | translate }}</mat-card-title>
+    <mat-card-subtitle>{{ 'amr.settings.themes.title' | translate }}</mat-card-subtitle>
+  </mat-card-header>
+  <ng-container *ngIf="settings$ | async as settings">
+      <mat-card-content [ngClass]="routeAnimationsElements">
+        <div class="icon-form-field">
+          <mat-icon color="accent"><fa-icon icon="paint-brush" color="accent"></fa-icon></mat-icon>
+          <mat-form-field>
+            <mat-select [placeholder]="'amr.settings.themes.placeholder' | translate"
+                        [ngModel]="settings.theme"
+                        (selectionChange)="onThemeSelect($event)"
+                        name="themes">
+              <mat-option *ngFor="let t of themes" [value]="t.value">
+                {{ 'amr.settings.themes.' + t.label | translate }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+  </ng-container>
+</mat-card>

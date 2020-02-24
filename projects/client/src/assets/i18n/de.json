@@ -1,0 +1,21 @@
+{
+  "amr.menu.home": "Home De",
+  "amr.settings.LAMBDA": "LAMBDA de",
+  "amr.settings.headline":"De krachtigste app ooit gemaakt. Koop het nu!",
+  "amr.menu.settings": "Einstellungen",
+  "amr.settings.animations.title": "Animationen",
+  "amr.settings.general.language.de": "Deutsch",
+  "amr.settings.general.language.en": "Englisch",
+  "amr.settings.general.placeholder": "Language De",
+  "amr.settings.themes.blue": "Blau",
+  "amr.settings.themes.dark": "Dunkel",
+  "amr.settings.themes.light": "Hell",
+  "amr.settings.themes.nature": "Natur",
+  "amr.settings.themes.placeholder": "Farbthema",
+  "amr.settings.themes.saneago": "",
+  "amr.settings.themes.sticky-header": "",
+  "amr.settings.themes.title": "Thema",
+  "amr.settings.title": "Einstellungen",
+  "amr.title.long": "Angular Material RxJs De",
+  "amr.title.short": "Angular De"
+}

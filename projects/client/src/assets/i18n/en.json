@@ -1,0 +1,19 @@
+{
+  "amr.menu.home": "Home",
+  "amr.settings.LAMBDA": "LAMBDA",
+  "amr.settings.headline":"The most powerful app ever made.  Buy it now!",
+  "amr.menu.settings": "Settings",
+  "amr.settings.general.language.de": "German",
+  "amr.settings.general.language.en": "English",
+  "amr.settings.general.placeholder": "Language",
+  "amr.settings.themes.blue": "Blue",
+  "amr.settings.themes.dark": "Dark",
+  "amr.settings.themes.light": "Light",
+  "amr.settings.themes.nature": "Nature",
+  "amr.settings.themes.placeholder": "Color Theme",
+  "amr.settings.themes.saneago": "",
+  "amr.settings.themes.title": "Themes",
+  "amr.settings.title": "Settings",
+  "amr.title.long": "Angular Material Rxjs",
+  "amr.title.short": "Angular"
+}

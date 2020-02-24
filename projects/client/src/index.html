@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/">
+  <title>angular-material-rxjs</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:title" content="Angular NgRx Material Starter Project by @tomastrajan">
+  <meta property="og:description" content="Angular NgRx Material Starter project with all the best practices, features and usage examples">
+  <meta property="og:image" content="/angular-ngrx-material-starter/intro.3e2d7713f2cb475efa85.jpg">
+  <meta property="og:url" content="https://tomastrajan.github.io/angular-ngrx-material-starter">
+
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <style type="text/css">
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .app-loading {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .app-loading .spinner {
+      height: 200px;
+      width: 200px;
+      animation: rotate 2s linear infinite;
+      transform-origin: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .app-loading .spinner .path {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+      stroke-linecap: round;
+      stroke: #ddd;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+      }
+      50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+      }
+      100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+      }
+    }
+  </style>
+</head>
+<body>
+<amr-root>
+  <div class="app-loading">
+    <div class="logo">
+      <svg class="spinner" viewBox="0 0 250 250" style="enable-background:new 0 0 250 250;" xml:space="preserve" x="0px" y="0px">
+        <style type="text/css">
+          .st0{fill:#DD0031;}
+          .st1{fill:#C3002F;}
+          .st2{fill:#FFFFFF;}
+        </style>
+        <g>
+          <polygon class="st0" points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2 	"/>
+          <polygon class="st1" points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30 	"/>
+          <path class="st2" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
+            L125,52.1z M142,135.4H108l17-40.9L142,135.4z"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</amr-root>
+</body>
+</html>

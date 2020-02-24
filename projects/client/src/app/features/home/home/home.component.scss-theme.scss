@@ -1,0 +1,56 @@
+@import '~@angular/material/theming';
+
+@mixin home-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  home {
+    .background {
+      color: mat-color($foreground, text);
+      background-color: mat-color($background, background);
+
+      .full-bg{
+        background-image: url(./assets/bg1.jpg); 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: 50% 0px;
+        width:100%; 
+        height:100%;
+
+        .container{
+          max-width:1170px; 
+          margin:0 auto;
+
+
+          h2{
+            font-weight:300; 
+            color:mat-color($primary, text); 
+            margin:20px 0; 
+            font-size:60px;
+          }
+
+          p{
+            color:mat-color($accent, text); 
+          }
+
+          .block1-left{
+            float:left; 
+            width:50%; 
+            color:mat-color($foreground, text); 
+            font-size:48px; 
+            padding-top:15%;
+          }
+          .block1-right{
+            float:left; 
+            width:50%; 
+            padding-top:20px;
+          }
+        }
+
+        .clearfix::after, .clearfix::before{position:relative; content:""; clear:both; display:block;}
+      }
+    }  
+  }
+}
